@@ -40,9 +40,9 @@ public class Robot extends TimedRobot {
 
     m_visionTrackingClient.startVisionTrackingClient();
 
-    m_chooser.setDefaultOption("Left Auto", new DriveAutoLeft());
-    m_chooser.addOption("Middle Auto", new DriveAutoMiddle());
-    m_chooser.addOption("Right Auto", new DriveAutoRight());
+    m_chooser.addDefault("Left Auto", new DriveAutoLeft());
+    m_chooser.addObject("Middle Auto", new DriveAutoMiddle());
+    m_chooser.addObject("Right Auto", new DriveAutoRight());
     SmartDashboard.putData("Auto mode", m_chooser);
   }
 

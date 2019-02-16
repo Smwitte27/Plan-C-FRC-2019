@@ -28,7 +28,6 @@ public class Drivetrain extends Subsystem {
   DifferentialDrive differentialDrive = null;
 
   public Drivetrain() {
-  
     leftFrontTalon = new WPI_TalonSRX(RobotMap.FrontLeftMotor);
     rightFrontTalon = new WPI_TalonSRX(RobotMap.FrontRightMotor);
     leftBackVictor = new WPI_VictorSPX(RobotMap.BackLeftMotor);

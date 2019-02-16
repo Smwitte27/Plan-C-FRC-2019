@@ -38,7 +38,6 @@ public class OI {
 
 
   public OI(){
-
     xboxB.whenPressed(new FollowVisionTarget());
     xboxB.whenReleased(new DriveArcade());
     xboxRightBumper.whenPressed(new LiftUp());

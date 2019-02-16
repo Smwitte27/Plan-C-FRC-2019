@@ -12,14 +12,16 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.robot.RobotMap;
+import frc.robot.commands.LiftDown;
 import frc.robot.commands.LiftStop;
+import frc.robot.commands.LiftUp;
 
 
 public class Lift extends Subsystem {
   private final double SPEED_OF_LIFT = 0.05;
   WPI_TalonSRX linearAccuatorMotor = null;
 
-  public Lift() {
+  public Lift(){
     linearAccuatorMotor = new WPI_TalonSRX(RobotMap.MiddleActuator);
   }
   public void LiftUp(){
