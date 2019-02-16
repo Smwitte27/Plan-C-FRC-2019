@@ -20,10 +20,6 @@ import frc.robot.commands.LiftDown;
 import frc.robot.commands.LiftStop;
 import frc.robot.commands.LiftUp;
 
-/**
- * This class is the glue that binds the controls on the physical operator
- * interface to the commands and command groups that allow control of the robot.
- */
 public class OI {
   public Joystick xboxController = new Joystick(RobotMap.xboxControllerPort);
   
@@ -35,7 +31,6 @@ public class OI {
 
   public Button xboxRightTrigger = new JoystickButton(xboxController, RobotMap.xbox_Right_Trigger);
   public Button xboxLeftTrigger = new JoystickButton(xboxController, RobotMap.xbox_Left_Trigger);
-
 
   public OI(){
 
@@ -51,6 +46,5 @@ public class OI {
     xboxLeftTrigger.whenReleased(new IntakeStop());
     xboxY.whenPressed(new IntakeReleaseHatch());
   }
-  
 }
 

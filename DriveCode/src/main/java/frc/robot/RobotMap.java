@@ -20,8 +20,8 @@ public class RobotMap {
   
 
   //TalonSRX's CAN Addresses
-  public static final int FrontLeftMotor  = 0;
-  public static final int FrontRightMotor = 0;
+  public static final int FrontLeftMotor  = 1;
+  public static final int FrontRightMotor = 2;
   
   
   public static final int xbox_B = 2;
@@ -35,19 +35,19 @@ public class RobotMap {
   public static final int xbox_Right_Trigger = 3;
 
   //VictorSPX CAN Addresses
-  public static final int BackLeftMotor  = 0;
-  public static final int BackRightMotor = 0;
+  public static final int BackLeftMotor  = 1;
+  public static final int BackRightMotor = 2;
 
 
   //Linear Actuator
-  public static final int MiddleActuator = 0;
+  public static final int MiddleActuator = 3;
   
-  public static final int IntakeMotorPort = 0;
+  public static final int IntakeMotorPort = 4;
   
   public static final int RPiPort = 5804;
 
   //Compressor 
-  public static final int COMPRESSOR = 0;
+  public static final int COMPRESSOR = 11;
   
   //Hatch Solinoids
   public static final int HATCH_SOLINOID_1 = 1;
