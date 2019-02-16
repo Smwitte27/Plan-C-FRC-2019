@@ -14,13 +14,42 @@ package frc.robot;
  * floating around.
  */
 public class RobotMap {
-  // For example to map the left and right motors, you could define the
-  // following variables to use with your drivetrain subsystem.
-  // public static int leftMotor = 1;
-  // public static int rightMotor = 2;
+  
+  //Port the Xbox Controller is Connected to
+  public static final int xboxControllerPort = 0; 
+  
 
-  // If you are using multiple modules, make sure to define both the port
-  // number and the module. For example you with a rangefinder:
-  // public static int rangefinderPort = 1;
-  // public static int rangefinderModule = 1;
+  //TalonSRX's CAN Addresses
+  public static final int FrontLeftMotor  = 0;
+  public static final int FrontRightMotor = 0;
+  
+  
+  public static final int xbox_B = 2;
+  public static final int xbox_Y = 4;
+
+  public static final int xbox_Right_Bumper = 6;
+  public static final int xbox_Left_Bumper = 5;
+  public static final int left_Stick = 9;
+  public static final int right_Stick = 10;
+  public static final int xbox_Left_Trigger = 2;
+  public static final int xbox_Right_Trigger = 3;
+
+  //VictorSPX CAN Addresses
+  public static final int BackLeftMotor  = 0;
+  public static final int BackRightMotor = 0;
+
+
+  //Linear Actuator
+  public static final int MiddleActuator = 0;
+  
+  public static final int IntakeMotorPort = 0;
+  
+  public static final int RPiPort = 5804;
+
+  //Compressor 
+  public static final int COMPRESSOR = 0;
+  
+  //Hatch Solinoids
+  public static final int HATCH_SOLINOID_1 = 1;
+  public static final int HATCH_SOLINOID_2 = 2;
 }
