@@ -23,8 +23,9 @@ public class RobotMap {
   public static final int FrontLeftMotor  = 1;
   public static final int FrontRightMotor = 2;
   
-  
+  public static final int xbox_A = 1;
   public static final int xbox_B = 2;
+  public static final int xbot_X = 3;
   public static final int xbox_Y = 4;
 
   public static final int xbox_Right_Bumper = 6;

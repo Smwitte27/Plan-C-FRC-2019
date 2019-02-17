@@ -18,7 +18,8 @@ import frc.robot.commands.IntakeStop;
 
 
 public class Intake extends Subsystem {
-  private final double SPEED_OF_INTAKE = 0.25;
+  private final double SPEED_OF_INTAKE_IN = 0.75;
+  private final double SPEED_OF_INTAKE_OUT = -1;
   DoubleSolenoid hatchSolenoids = null;
   WPI_TalonSRX IntakeMotor = null;
 
@@ -28,11 +29,11 @@ public class Intake extends Subsystem {
     hatchSolenoids = new DoubleSolenoid(RobotMap.HATCH_SOLINOID_1, RobotMap.HATCH_SOLINOID_2);
   }
   public void IntakeIn(){
-    IntakeMotor.set(ControlMode.PercentOutput, SPEED_OF_INTAKE);
+    IntakeMotor.set(ControlMode.PercentOutput, SPEED_OF_INTAKE_IN);
 
   }
   public void IntakeOut(){
-    IntakeMotor.set(ControlMode.PercentOutput, -SPEED_OF_INTAKE);
+    IntakeMotor.set(ControlMode.PercentOutput, SPEED_OF_INTAKE_OUT);
   }
   public void IntakeStop(){
     IntakeMotor.stopMotor();;

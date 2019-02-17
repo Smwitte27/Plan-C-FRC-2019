@@ -8,6 +8,7 @@
 package frc.robot.subsystems;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -16,11 +17,11 @@ import frc.robot.commands.LiftStop;
 
 
 public class Lift extends Subsystem {
-  private final double SPEED_OF_LIFT = 0.05;
-  WPI_TalonSRX linearAccuatorMotor = null;
+  private final double SPEED_OF_LIFT = 1;
+  TalonSRX linearAccuatorMotor = null;
 
   public Lift() {
-    linearAccuatorMotor = new WPI_TalonSRX(RobotMap.MiddleActuator);
+    linearAccuatorMotor = new TalonSRX(RobotMap.MiddleActuator);
   }
   public void LiftUp(){
     linearAccuatorMotor.set(ControlMode.PercentOutput, SPEED_OF_LIFT);
@@ -30,7 +31,7 @@ public class Lift extends Subsystem {
     linearAccuatorMotor.set(ControlMode.PercentOutput, -SPEED_OF_LIFT);
   }
   public void LiftStop(){
-    linearAccuatorMotor.stopMotor();;
+    linearAccuatorMotor.set(ControlMode.PercentOutput, 0);
   }
   @Override
   public void initDefaultCommand() {

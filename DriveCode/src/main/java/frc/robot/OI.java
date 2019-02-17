@@ -10,6 +10,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.buttons.Trigger;
 import frc.robot.commands.DriveArcade;
 import frc.robot.commands.FollowVisionTarget;
 import frc.robot.commands.IntakeIn;
@@ -29,8 +30,8 @@ public class OI {
   public Button xboxRightBumper = new JoystickButton(xboxController, RobotMap.xbox_Right_Bumper);
   public Button xboxLeftBumper = new JoystickButton(xboxController, RobotMap.xbox_Left_Bumper);
 
-  public Button xboxRightTrigger = new JoystickButton(xboxController, RobotMap.xbox_Right_Trigger);
-  public Button xboxLeftTrigger = new JoystickButton(xboxController, RobotMap.xbox_Left_Trigger);
+  public Button xboxRightTrigger = new JoystickButton(xboxController, RobotMap.xbox_A);
+  public Button xboxLeftTrigger = new JoystickButton(xboxController, RobotMap.xbot_X);
 
   public OI(){
 

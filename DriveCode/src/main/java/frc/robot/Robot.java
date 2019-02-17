@@ -34,9 +34,9 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     m_Drivetrain = new Drivetrain();
-    m_oi = new OI();
     m_Lift = new Lift();
     m_Intake = new Intake();
+    m_oi = new OI();
     m_visionTrackingClient = new VisionTrackingClient(RobotMap.RPiPort);
 
     m_visionTrackingClient.startVisionTrackingClient();
